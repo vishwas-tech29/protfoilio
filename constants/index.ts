@@ -23,29 +23,37 @@ import { avatar1, avatar10, avatar11, avatar12, avatar2, avatar3, avatar4, avata
 export const project = [
     {
         id: 1,
-        title: "AI Driver Monitoring System",
-        description: "Developed a real-time AI-based system to monitor driver behavior using computer vision. Integrated YOLOv8 and TensorFlow Lite to detect mobile phone usage near the driver's face to reduce false positives.",
+        title: "VKR Interiors",
+        description: "Premium Interiors Design Solutions - Complete interior design and renovation services for residential and commercial spaces.",
         img: ochi,
         color: "#cdea68",
-        href: "#"
+        href: "https://vkrinteriors.com"
 
     },
     {
         id: 2,
-        title: "Smart Glasses (AR Wearable)",
-        description: "Designed and built a lightweight AR smart glasses device capable of performing real-time computer vision tasks including text recognition, object detection, and live translation.",
+        title: "AUREIM Chocolates",
+        description: "Premium Handcrafted Chocolates with Free Delivery in Hyderabad - Artisanal chocolate creations made with finest ingredients.",
         img: github,
         color: "#0C1015",
-        href: "#"
+        href: "https://aureim.com"
 
     },
     {
         id: 3,
-        title: "Autonomous Monocopter Drone",
-        description: "Developed a monocopter drone inspired by maple seed aerodynamics capable of stable flight and AI-powered surveillance with object detection and autonomous flight stabilization.",
+        title: "NUERIKA LABS",
+        description: "Advanced research and development laboratory specializing in innovative technology solutions and scientific research.",
         img: supadupa,
         color: "#163200",
-        href: "#"
+        href: "https://nuerikalabs.com"
+    },
+    {
+        id: 4,
+        title: "Astrid Dermatology",
+        description: "Welcome to Astrid Dermatology and Cosmetology Clinic - Professional skincare and cosmetic treatments by expert dermatologists.",
+        img: flow,
+        color: "#B3EB16",
+        href: "https://astriddermatology.com"
     },
 ];
 

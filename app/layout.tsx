@@ -2,7 +2,7 @@ import "@styles/globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Zain Ali",
+	title: "vishwas rallapalli",
 	description: "My Personal Portfolio",
 };
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body suppressHydrationWarning={true}>{children}</body>
 		</html>
 	);
 }
