@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	cursor: none;
+}
+
+body {
+	font-family: montreal;
+	background-color: #000000;
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+	width: 0;
+}
+
+@font-face {
+	src: url("../font/PPNeueMontreal.woff");
+	font-family: montreal;
+}
+
+@layer utilities {
+	.padding-x {
+		@apply px-[50px] lg:px-[40px] md:px-[30px] sm:px-[20px] xm:px-[20px];
+	}
+	.padding-y {
+		@apply py-[px] lg:py-[px] md:py-[px] sm:py-[px] xm:py-[px];
+	}
+	.heading {
+		@apply text-[px] lg:text-[px] md:text-[px] sm:text-[px] xm:text-[px];
+	}
+	.subHeading {
+		@apply text-[px] lg:text-[px] md:text-[px] sm:text-[px] xm:text-[px];
+	}
+	.paragraph {
+		@apply text-[px] lg:text-[px] md:text-[px] sm:text-[px] xm:text-[px];
+	}
+	.subParagraph {
+		@apply text-[px] lg:text-[px] md:text-[px] sm:text-[px] xm:text-[px];
+	}
+}
+.slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.slider .el {
+	width: 100%;
+	height: 100%;
+}
+
+.slider .el:hover .perspectiveText {
+	transform: rotateX(90deg);
+}
+
+.slider .el:hover .perspectiveText p:nth-of-type(1) {
+	transform: translateY(-100%);
+	opacity: 0;
+}
+
+.slider .el:hover .perspectiveText p:nth-of-type(2) {
+	opacity: 1;
+}
+.perspectiveText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
+	transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.perspectiveText p {
+	transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+	pointer-events: none;
+	text-transform: uppercase;
+}
+
+.perspectiveText p:nth-of-type(2) {
+	position: absolute;
+	transform-origin: bottom center;
+	transform: rotateX(-90deg) translateY(12rem);
+	opacity: 0;
+}
+
+.hero-img {
+	clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+
+.bar {
+	clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+
+.button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.button .slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.button .slider .el {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+}
+
+.button .slider .el p {
+	margin: 0px;
+}
+
+.button .slider .el:nth-of-type(2) {
+	background-color: black;
+}
+
+.button .slider .el:nth-of-type(2) p {
+	color: #ffffff;
+}
+
+.button .slider .el:hover .perspectiveText {
+	transform: rotateX(90deg);
+}
+
+.button .slider .el:hover .perspectiveText p:nth-of-type(1) {
+	transform: translateY(-100%);
+	opacity: 0;
+}
+
+.button .slider .el:hover .perspectiveText p:nth-of-type(2) {
+	opacity: 1;
+}
+
+.perspectiveText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
+	transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.perspectiveText p {
+	transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+	pointer-events: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.perspectiveText p:nth-of-type(2) {
+	position: absolute;
+	transform-origin: bottom center;
+	transform: rotateX(-90deg) translateY(9rem);
+	opacity: 0;
+}
